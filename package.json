@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "frontend": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "backend": "node server/app",
-    "lint": "vue-cli-service lint"
+    "frontend": "vue-cli-service serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -21,6 +21,7 @@
     "core-js": "^2.6.10",
     "gsap": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
+    "register-service-worker": "^1.6.2",
     "sqlite3": "^4.1.0",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.5",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-pwa": "^4.0.5",
     "@vue/cli-service": "^3.12.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^7.3.1",

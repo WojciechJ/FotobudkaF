@@ -63,7 +63,7 @@ import { Twitter } from "vue-socialmedia-share";
 import { Pinterest } from "vue-socialmedia-share";
 
 let ax = axios.create({
-  baseURL: "https://fotobudkaraspberry.pl/getPhoto.php"
+  baseURL: "http://fotobudkaraspberry.pl/getPhoto.php"
 });
 
 /* let ax = axios.create({

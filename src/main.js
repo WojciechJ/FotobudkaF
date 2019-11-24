@@ -17,6 +17,7 @@ import router from './router';
 import App from './App.vue';
 import gsap from "gsap";
 import CSSPlugin from "gsap/CSSPlugin";
+import './registerServiceWorker'
 
 
 library.add(fab);
@@ -25,7 +26,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(vuejquery);
 Vue.use(VueAxios, axios);
 AOS.init();
-gsap.registerPlugin(CSSPlugin); 
+gsap.registerPlugin(CSSPlugin);
 const token = localStorage.getItem('user-token');
 if (token) {
   Vue.prototype.$http.defaults.headers.common.Authorization = token;
