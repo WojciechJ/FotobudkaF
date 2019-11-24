@@ -23,14 +23,17 @@ a{color:inherit;text-decoration:none}
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-wrap-home{
+	
 	width:100%;
- 	 margin:auto;
-  	margin-top:125px;
+ 	margin:auto;
+    border-radius: 100px;
 	max-width:525px;
 	min-height:400px;
 	position:relative;
-	background: -webkit-linear-gradient(rgb(91, 42, 114), rgb(56, 16, 109));
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	box-shadow: 0 0 22px -5px rgba(0, 0, 0, 0.1);
+	input{
+		background-color: #F1F3FE !important;
+	}
 }
 .login-wrap-register{
 	width:100%;
@@ -47,7 +50,9 @@ a{color:inherit;text-decoration:none}
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(40,57,101,.9);
+	background:white;
+	border-radius: 100px;
+	border: 2px solid #F1F3FE;
 }
 .login-html .tab{
 	font-size:22px;
@@ -76,13 +81,13 @@ a{color:inherit;text-decoration:none}
 .login-html .tab,
 .login-form .group .label,
 .login-form .group .button{
-	text-transform:uppercase;
+
 }
 .login-form .group .label,
 .login-form .group .input,
 .login-form .group .button{
 	width:100%;
-	color:#fff;
+	
 	display:block;
 }
 .login-form .group .input,
@@ -93,22 +98,25 @@ a{color:inherit;text-decoration:none}
 	background:rgba(255,255,255,.1);
 }
 .login-form .group .button{
-	background:#1161ee;
+	background:$mc;
+	div{
+		color: white;
+	}
 }
 .smallButton{
 	border:none;
 	padding:10px 10px;
 	border-radius:5px;
 	background:rgba(255,255,255,.1);
-	background:#1161ee;
+
 	width:max-content;
-	color:#fff;
+	
 	margin: 0 1rem;
 }
 .madButton{
-	text-transform:uppercase;
+	text-transform:capitalize;
 	width:100%;
-	color:#fff;
+
 	display:block;
 	border:none;
 	padding:15px 20px;
@@ -118,8 +126,8 @@ a{color:inherit;text-decoration:none}
 }
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
-	color:#fff;
-	border-color:#1161ee;
+
+	
 }
 .login-form{
 	min-height:345px;
@@ -168,7 +176,7 @@ a{color:inherit;text-decoration:none}
 	transform:scale(0) rotate(0);
 }
 .login-form .group .check:checked + label{
-	color:#fff;
+
 }
 .login-form .group .check:checked + label .icon{
 	background:#1161ee;
@@ -197,7 +205,7 @@ a{color:inherit;text-decoration:none}
 
 a {
   text-decoration:none;
-  color:#FFF;
+
 }
 
 @keyframes slidebg {

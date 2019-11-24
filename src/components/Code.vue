@@ -6,7 +6,7 @@
           <div class="login-wrap-home">
             <div class="login-html">
               <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-              <label for="tab-1" class="tab">Enter your code</label>
+              <label for="tab-1" class="tab">Wpisz swój kod</label>
               <input id="tab-2" type="radio" name="tab" class="sign-up">
               <label for="tab-2" class="tab"></label>
               <div class="login-form">
@@ -15,7 +15,7 @@
                     <input type="text" id="term" class="input" spellcheck="false" v-model="term" required autofocus v-touppercase>
                   </div>
                   <div class="group">
-                    <button type="submit" v-bind:class="{'button': normalButton, 'madButton': !normalButton}" value="Submit"><div v-if="wrongCode">WRONG CODE</div><div v-if="!wrongCode">Submit</div></button>
+                    <button type="submit" v-bind:class="{'button': normalButton, 'madButton': !normalButton}" value="Submit"><div v-if="wrongCode">WRONG CODE</div><div v-if="!wrongCode">Wyślij</div></button>
                     <div v-if="isLoading">
                       <div class="loader"></div>
                     </div>
@@ -63,7 +63,7 @@ import { Twitter } from "vue-socialmedia-share";
 import { Pinterest } from "vue-socialmedia-share";
 
 let ax = axios.create({
-  baseURL: "https://fotobudkaraspberry.000webhostapp.com/getPhoto.php"
+  baseURL: "https://fotobudkaraspberry.pl/getPhoto.php"
 });
 
 /* let ax = axios.create({

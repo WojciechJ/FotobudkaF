@@ -1,6 +1,6 @@
 <template>
-	<div class="photos">
-		lul
+	<div class="pricing">
+		CENNIK - w budowie
 	</div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-	<div class="photos">
-		lul
+	<div class="contact">
+		KONTAKT - w budowie
 	</div>
 </template>
 

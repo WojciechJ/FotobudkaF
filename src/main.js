@@ -3,10 +3,7 @@ import Vue from 'vue';
 import VueAxios from 'vue-axios';
 import './css/bootstrap.min.css';
 import './css/fancybox.min.css';
-import './css/style.css';
-import './css/forms.css';
-import './css/loader.css';
-import './css/menu.sass';
+import './css/style.scss';
 import './css/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -18,6 +15,8 @@ import axios from 'axios';
 import store from './store';
 import router from './router';
 import App from './App.vue';
+import gsap from "gsap";
+import CSSPlugin from "gsap/CSSPlugin";
 
 
 library.add(fab);
@@ -26,6 +25,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(vuejquery);
 Vue.use(VueAxios, axios);
 AOS.init();
+gsap.registerPlugin(CSSPlugin); 
 const token = localStorage.getItem('user-token');
 if (token) {
   Vue.prototype.$http.defaults.headers.common.Authorization = token;
@@ -49,5 +49,7 @@ new Vue({
   },
   router,
   store,
+  gsap,
+  CSSPlugin,
   render: h => h(App),
 }).$mount('#app');

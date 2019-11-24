@@ -1,69 +1,41 @@
 /* Base */
-
-body {
-  line-height: 1.7;
-  font-weight: 400;
-  font-size: 1rem;
-  overflow-x: hidden;
+$mc : #1A237E;
+$green: #00bfa5;
+@import './mixins.scss'; 
+@import './menu.scss';
+@import './forms.scss';
+@import './loader.scss';
+.visually-hidden {
+  @extend %hidden;
 }
-
-
-  /* top bar */
-.top-bar{
-  height: 60px;
-  position: absolute;
-  width: 100vw;
-  background: white;
-  z-index: 3;
-  background: -webkit-linear-gradient(rgb(91, 42, 114), rgb(56, 16, 109));
-  -webkit-box-shadow: 0px 14px 29px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 14px 29px -9px rgba(0,0,0,0.75);
-box-shadow: 0px 14px 29px -9px rgba(0,0,0,0.75);
-  }
-.top-bar-under{
-  height: 70px;
-  display:block;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vw;
-  z-index: 1;
-  border-radius: 50px;
-  background: rgb(66, 56, 160);
-  }
-.logo-under{
-    border-radius: 50px;
-    height: 115px;
-    width:100px;
-    background: rgb(66, 56, 160);
-    margin: 0 auto;
-
-  }
-/*  as */
-.top-bar img{
-  width: auto;
-  height:100px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-
-}
-
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
-
-:root {
-  --color: #3c3163;
-  --transition-time: 0.5s;
-}
-
-* {
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  color: black;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+body{
+ width:100%;
+ height: 100%;
+
+}
+.main-warapper{
+  padding-top: 200px;
+ width:100vw;
+ height: 100vh;
+ background:white;
+
 }
 
-a {
-  color: inherit;
-}
+
+
 
 .cards-wrapper {
   display: grid;

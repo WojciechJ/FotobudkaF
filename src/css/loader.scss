@@ -1,27 +1,27 @@
 /* LOADER ANIMATION */
 .loader{
-  background: #ffffff;
+  background: $mc;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 0.8em;
   height: 2em;
 }
 .loader:before{
-    background: #ffffff;
+    background: $mc;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 0.8em;
   height: 2em;
 }
 .loader:after {
-  background: #ffffff;
+  background: $mc;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 0.8em;
   height: 2em;
 }
 .loader {
-  color: #ffffff;
+  color: $mc;
   text-indent: -9999em;
   margin: 30px auto;
   position: relative;
@@ -31,6 +31,10 @@
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 .loader:before,
 .loader:after {

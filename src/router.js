@@ -8,7 +8,8 @@ import Code from './components/Code.vue';
 import Login from './components/Login.vue';
 import Profile from './components/Profile.vue';
 import Register from './components/Register.vue';
-
+import Pricing from './components/Pricing.vue';
+import Contact from './components/Contact.vue';
 Vue.use(Router);
 
 const router = new Router({
@@ -20,12 +21,22 @@ const router = new Router({
       component: Home,
     },
     {
-      path: '/login',
+      path: '/cennik',
+      name: 'pricing',
+      component: Pricing,
+    },
+    {
+      path: '/kontakt',
+      name: 'contact',
+      component: Contact,
+    },
+    {
+      path: '/logowanie',
       name: 'login',
       component: Login,
     },
     {
-      path: '/register',
+      path: '/rejestracja',
       name: 'register',
       component: Register,
     },

@@ -19,6 +19,7 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "core-js": "^2.6.10",
+    "gsap": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
     "sqlite3": "^4.1.0",
     "vue": "^2.6.10",
