@@ -10,6 +10,7 @@ import Profile from './components/Profile.vue';
 import Register from './components/Register.vue';
 import Pricing from './components/Pricing.vue';
 import Contact from './components/Contact.vue';
+import SecureComponent from "./components/secure.vue"
 Vue.use(Router);
 
 const router = new Router({
@@ -39,6 +40,11 @@ const router = new Router({
       path: '/rejestracja',
       name: 'register',
       component: Register,
+    },
+    {
+      path: "/secure",
+      name: "secure",
+      component: SecureComponent
     },
     {
       path: '/Profile',
